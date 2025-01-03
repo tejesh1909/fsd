@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Boxed Layout</title>
+    <style>
+        /* Global reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e9ecef;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Box Container Styling */
+        .box {
+            width: 80%;
+            max-width: 900px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            margin: 20px;
+        }
+
+        /* Header Styling */
+        .box header {
+            background-color: #007bff;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .box header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+
+        /* Navigation Styling */
+        .box nav {
+            margin-bottom: 20px;
+        }
+
+        .box nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        .box nav ul li {
+            margin: 0 15px;
+        }
+
+        .box nav ul li a {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .box nav ul li a:hover {
+            color: #0056b3;
+        }
+
+        /* Main Content Section */
+        .box main {
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .box main h2 {
+            font-size: 1.8rem;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .box main p {
+            line-height: 1.6;
+            color: #555;
+        }
+
+        /* Footer Styling */
+        .box footer {
+            margin-top: 30px;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border-radius: 10px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <!-- Header Section -->
+        <header>
+            <h1>Welcome to My Boxed Layout</h1>
+        </header>
+
+        <!-- Navigation Bar -->
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <main>
+            <h2>About Us</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ultricies ligula eu sapien laoreet, eget sollicitudin justo aliquet. Nulla ac lorem tortor. Integer vulputate leo id vestibulum tincidunt. Cras ac quam id dui vestibulum facilisis.</p>
+            <p>Nullam ac libero sit amet justo feugiat auctor. Etiam tristique at nunc sed pretium. Aenean sit amet facilisis ante. Curabitur condimentum, sapien vitae tincidunt venenatis, justo leo scelerisque odio, id venenatis augue tortor at ante.</p>
+        </main>
+
+        <!-- Footer Section -->
+        <footer>
+            <p>&copy; 2025 Boxed Layout Website. All Rights Reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
